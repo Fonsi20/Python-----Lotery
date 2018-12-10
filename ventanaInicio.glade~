@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="ventanaPrimitiva">
+    <property name="name">ventanaPrimitiva</property>
+    <property name="can_focus">False</property>
+    <property name="default_width">420</property>
+    <property name="default_height">250</property>
+    <signal name="destroy" handler="on_ventanaPrimitiva_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkButton" id="btnSalirPri">
+            <property name="label" translatable="yes">Salir</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btnSalirPri_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">309</property>
+            <property name="y">25</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">247</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Primitiva</property>
+            <attributes>
+              <attribute name="weight" value="medium"/>
+              <attribute name="stretch" value="condensed"/>
+              <attribute name="scale" value="4"/>
+              <attribute name="underline" value="True"/>
+              <attribute name="foreground" value="#4e4e9a9a0606"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">12</property>
+            <property name="y">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">276</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Los resultados de la Primitiva de hoy son:</property>
+          </object>
+          <packing>
+            <property name="x">13</property>
+            <property name="y">93</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblResultadoPrimi">
+            <property name="width_request">100</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">170</property>
+            <property name="y">126</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblReintegro">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">93</property>
+            <property name="y">163</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">140</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Números ganadores:</property>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">117</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">100</property>
+            <property name="height_request">40</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Reintegro</property>
+          </object>
+          <packing>
+            <property name="y">166</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="ventanaQuiniela">
+    <property name="width_request">200</property>
+    <property name="height_request">600</property>
+    <property name="can_focus">False</property>
+    <signal name="destroy" handler="on_ventanaQuiniela_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="width_request">100</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">270</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Los resultados de la Quiniela de hoy son:</property>
+          </object>
+          <packing>
+            <property name="x">17</property>
+            <property name="y">89</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">224</property>
+            <property name="height_request">67</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Quiniela</property>
+            <attributes>
+              <attribute name="weight" value="heavy"/>
+              <attribute name="scale" value="4"/>
+              <attribute name="foreground" value="#34346565a4a4"/>
+              <attribute name="background" value="#f3f3f3f3f3f3"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">11</property>
+            <property name="y">19</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r1">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="margin_right">294</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">130</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnSalirQui">
+            <property name="label" translatable="yes">Salir</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btnSalirQui_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">296</property>
+            <property name="y">554</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r2">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">160</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r3">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">190</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r4">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r5">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">250</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r6">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">280</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r7">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">310</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r8">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">340</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r9">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">370</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r10">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r11">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">430</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r12">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">460</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r13">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">490</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r14">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">520</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="r15">
+            <property name="width_request">10</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+          </object>
+          <packing>
+            <property name="x">100</property>
+            <property name="y">550</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="ventanaprincipal">
+    <property name="can_focus">False</property>
+    <property name="default_width">520</property>
+    <property name="default_height">200</property>
+    <signal name="destroy" handler="on_ventanaprincipal_destroy" swapped="no"/>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">196</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Loteria</property>
+            <attributes>
+              <attribute name="style" value="oblique"/>
+              <attribute name="weight" value="ultraheavy"/>
+              <attribute name="variant" value="small-caps"/>
+              <attribute name="stretch" value="ultra-expanded"/>
+              <attribute name="scale" value="4"/>
+              <attribute name="foreground" value="#c1c17d7d1111"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">16</property>
+            <property name="y">13</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">181</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">La mejor loteria del estado</property>
+          </object>
+          <packing>
+            <property name="x">21</property>
+            <property name="y">83</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="width_request">179</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Alfonso Fernández Álvarez</property>
+            <attributes>
+              <attribute name="scale" value="1"/>
+              <attribute name="foreground" value="#555557575353"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">19</property>
+            <property name="y">104</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnprimitiva">
+            <property name="label" translatable="yes">Primitiva</property>
+            <property name="width_request">120</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btnprimitiva_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">25</property>
+            <property name="y">145</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnquiniela">
+            <property name="label" translatable="yes">Quiniela</property>
+            <property name="width_request">120</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btnquiniela_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">160</property>
+            <property name="y">147</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnsalir">
+            <property name="label" translatable="yes">Salir</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btnsalir_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">381</property>
+            <property name="y">148</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkImage" id="imagen">
+            <property name="width_request">100</property>
+            <property name="height_request">100</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">../../../../../../../../home/a16alfonsofa/Descargas/coin.png</property>
+          </object>
+          <packing>
+            <property name="x">189</property>
+            <property name="y">9</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
